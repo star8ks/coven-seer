@@ -1,0 +1,35 @@
+{
+  "name": "coven-seer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node ./script.ts",
+    "start": "ts-node name.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "16.11.26",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint": "^8.15.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "prisma": "3.12.0",
+    "ts-node": "^10.7.0",
+    "typescript": "4.6.3"
+  },
+  "dependencies": {
+    "@prisma/client": "3.12.0",
+    "lunar-typescript": "^1.2.21",
+    "opencc": "^1.1.3"
+  },
+  "engines": {
+    "node": ">=12.2.0"
+  }
+}

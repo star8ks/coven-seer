@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model kangxi {
+  id         Int    @id @default(autoincrement()) @db.UnsignedInt
+  code_point String @db.VarChar(64)
+  value      Int    @unique(map: "value") @db.UnsignedInt
+  char       String @db.VarChar(8)
+  strokes    Int    @db.UnsignedTinyInt
+}
